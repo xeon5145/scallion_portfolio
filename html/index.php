@@ -5,6 +5,12 @@
     <title></title>
   </head>
   <body>
-this is index page
+    <div class="">
+      <form class="" method="post">
+        <input type="text" name="username" placeholder="Enter Your Username">
+        <input type="password" name="password" placeholder="Enter Your Password">
+        <input type="submit" name="login" value="Login">
+      </form>
+    </div>
   </body>
 </html>
