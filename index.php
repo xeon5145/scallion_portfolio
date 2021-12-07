@@ -1,14 +1,35 @@
 <?php
 include "include/back_imp.php";
 // error_reporting(0);
+// empty message variables-------------------------------------------
+$login_status = "";
+// empty message variables-------------------------------------------
 if(isset($_POST['login']))
 {
-  echo $username = $_POST['username'];
-  echo $password = $_POST['password'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
 
-$creds = "SELECT username,email,password FROM user_accounts";
-$cred_id =
+$creds = "SELECT username,email,password FROM user_accounts WHERE username = '$username' OR email = '$username'";
+$cred_id = $op_conn->query($creds);
+if($cred_id->num_rows > 0)
+{
+ while($cred_ow = $cred_id->fetch_assoc())
+ {
+   $pwd = $cred_ow['password'];
+   if($password == $pwd)
+   {
+     header('Location: dashboard.php');
+   }
+   else
+   {
+     $login_status = "Wrong password";
+   }
+ }
 }
-
+else
+{
+  $login_status = "No account is linked to this username/Email";
+}
+}
 include "html/index.php";
  ?>
