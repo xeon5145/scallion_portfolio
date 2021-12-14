@@ -7,7 +7,7 @@
   <body>
     <div class="">
       <?php
-      echo $account_message; 
+      echo $account_message;
        ?>
     </div>
 <form method="post">
