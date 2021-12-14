@@ -13,7 +13,7 @@ if(isset($_POST['crt_accnt']))
   $pwd_c = $_POST['pwd_c'];
   // ------------------unique id-------------------------
   $str_uid = strval($u_name.$pwd_c);
-  $uid = crc32($str_uid);
+  $uid = hash('SHA256',crc32($str_uid));
   // ------------------unique id-------------------------
   // ----------------------------pwd ecryption-------------------------
   // SHA 256 password encryption
