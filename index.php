@@ -8,6 +8,13 @@ if(isset($_POST['login']))
 {
   $username = $_POST['username'];
   $password = $_POST['password'];
+  // ----------------------encrypting password--------------------------------------
+  $enc_pwd = hash('sha256',$password);
+  // ----------------------encrypting password--------------------------------------
+  // --------------------unique key generation and hashing--------------------------
+  $unique_key = $username.$password;
+  $enc_unique_key = hash('sha256',$unique_key);
+  // --------------------unique key generation and hashing--------------------------
 
 $creds = "SELECT username,email,password FROM user_accounts WHERE username = '$username' OR email = '$username'";
 $cred_id = $op_conn->query($creds);
@@ -16,7 +23,7 @@ if($cred_id->num_rows > 0)
  while($cred_ow = $cred_id->fetch_assoc())
  {
    $pwd = $cred_ow['password'];
-   if($password == $pwd)
+   if($enc_pwd == $pwd)
    {
      header('Location: dashboard.php');
    }
