@@ -29,7 +29,6 @@ if(isset($_POST['crt_accnt']))
   }
   else
   {
-     echo "Error: " . $acc_crt . "<br>" . $op_conn->error;
     $account_message = "<p>Something went wrong , Please try again</p>";
   }
 }
