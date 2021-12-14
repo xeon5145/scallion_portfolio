@@ -5,6 +5,11 @@
     <title></title>
   </head>
   <body>
+    <div class="">
+      <?php
+      echo $account_message; 
+       ?>
+    </div>
 <form method="post">
 <input type="firstname" name="f_name" placeholder="Enter Firstname">
 <input type="lastname" name="l_name" placeholder="Enter Lastname">

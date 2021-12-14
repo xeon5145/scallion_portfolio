@@ -1,10 +1,37 @@
 <?php
 include "include/back_imp.php";
+// --------------------default variales-------------------------
+$account_message = "";
+// --------------------default variales-------------------------
 // ------------------------create account----------------------
-if(issest($_POST['crt_accnt']))
+if(isset($_POST['crt_accnt']))
 {
-  $f_name = $_POST[''];
-  $l_name
+  $f_name = $_POST['f_name'];
+  $l_name  = $_POST['l_name'];
+  $email = $_POST['email'];
+  $u_name = $_POST['u_name'];
+  $pwd_c = $_POST['pwd_c'];
+  // ------------------unique id-------------------------
+  $str_uid = strval($u_name.$pwd_c);
+  $uid = crc32($str_uid);
+  // ------------------unique id-------------------------
+  // ----------------------------pwd ecryption-------------------------
+  // SHA 256 password encryption
+  $enc_pwd = crypt($pwd_c,'$5$rounds=5000$heyladiesdropitdown$');
+  // ----------------------------pwd ecryption--------------------------
+
+  $acc_crt = "INSERT INTO user_accounts (firstname, lastname, email, username, u_id , password)
+              VALUES ('$f_name','$l_name','$email','$u_name','$uid','$enc_pwd') ";
+
+  if(mysqli_query($op_conn,$acc_crt))
+  {
+    $account_message = "<p>Your account has been created successfully</p>";
+  }
+  else
+  {
+     echo "Error: " . $acc_crt . "<br>" . $op_conn->error;
+    $account_message = "<p>Something went wrong , Please try again</p>";
+  }
 }
 // ------------------------create account----------------------
 include "html/create_account.php";
