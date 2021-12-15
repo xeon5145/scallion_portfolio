@@ -26,7 +26,17 @@ if(isset($_POST['crt_accnt']))
 
   if(mysqli_query($op_conn,$acc_crt))
   {
-    $account_message = "<p>Your account has been created successfully</p>";
+    $mail->Subject = "Welcome To Onion";
+    $mail->Body = "your account has been created successfully , please verify your email using this link";
+    $mail->addAddress($email);
+    if($mail->Send())
+    {
+      $account_message = "<p>Your account has been created successfully</p>";
+    }
+    else
+    {
+      $account_message = "<p>Something went wrong</p>";
+    }
   }
   else
   {
