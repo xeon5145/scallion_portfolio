@@ -9,12 +9,8 @@ if(isset($_POST['login']))
   $username = $_POST['username'];
   $password = $_POST['password'];
   // ----------------------encrypting password--------------------------------------
-  $enc_pwd = hash('sha256',$password);
+  $enc_pwd = crypt($password,'$5$rounds=5000$heyladiesdropitdown$');
   // ----------------------encrypting password--------------------------------------
-  // --------------------unique key generation and hashing--------------------------
-  $unique_key = $username.$password;
-  $enc_unique_key = hash('sha256',$unique_key);
-  // --------------------unique key generation and hashing--------------------------
 
 $creds = "SELECT username,email,password FROM user_accounts WHERE username = '$username' OR email = '$username'";
 $cred_id = $op_conn->query($creds);
@@ -38,5 +34,7 @@ else
   $login_status = "No account is linked to this username/Email";
 }
 }
+include "include/account_header.php";
 include "html/index.php";
+include "include/account_footer.php";
  ?>

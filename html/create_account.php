@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
     <div class="">
       <?php
       echo $account_message;
@@ -19,5 +12,3 @@
 <input type="password" name="pwd_c" placeholder="Confirm Password">
 <input type="submit" name="crt_accnt" value="Submit">
 </form>
-  </body>
-</html>

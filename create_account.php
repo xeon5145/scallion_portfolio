@@ -33,5 +33,7 @@ if(isset($_POST['crt_accnt']))
   }
 }
 // ------------------------create account----------------------
+include "include/account_header.php";
 include "html/create_account.php";
+include "include/account_footer.php";
  ?>
