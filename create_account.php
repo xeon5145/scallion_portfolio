@@ -1,5 +1,6 @@
 <?php
 include "include/back_imp.php";
+include "include/mailer.php";
 // --------------------default variales-------------------------
 $account_message = "";
 // --------------------default variales-------------------------
