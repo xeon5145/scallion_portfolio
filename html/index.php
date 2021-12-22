@@ -1,9 +1,8 @@
-<link rel="stylesheet" href="dist/css/index.css">
 <div class="form-container">
 <div class="head-text">
   <span>Login</span>
 </div>
-      <form class="main-form" method="post">
+      <form class="" method="post">
           <label for="username">Username / Email</label><br/>
           <input  type="text" id="username" name="username" placeholder="Enter Your Username or Email"><br/>
           <label for="password">Password</label><br/>
