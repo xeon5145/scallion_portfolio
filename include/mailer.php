@@ -28,7 +28,6 @@ $mail->Username = "deathvalerians@gmail.com";
 $mail->Password = "AOBFNTNDR";
 //set sender mail
 $mail->setFrom("deathvalerians@gmail.com", "Onion Portfolio");
-
 // subject
 // body
 // address
