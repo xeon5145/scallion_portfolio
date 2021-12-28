@@ -11,17 +11,17 @@ part 1 ends
       <div class="">
 
       <label for="">Choose a crypto : </label>
-      <select class="" name="">
+      <select class="" name="crp_name">
         <option value="" selected>Chosse a crypto</option>
       </select>
     </div>
     <div class="">
       <label for="">Enter Buy Price</label>
-      <input type="text" name="" placeholder="Enter Price" required pattern="[0-9.]+">
+      <input type="text" name="b_price" placeholder="Enter Price" required pattern="[0-9.]+">
     </div>
     <div class="">
       <label for="">Enter Quantity : </label>
-      <input type="text" name="" placeholder="Enter Quantity" required pattern="[0-9.]+">
+      <input type="text" name="quantity" placeholder="Enter Quantity" required pattern="[0-9.]+">
     </div>
     <div class="">
       <input type="submit" name="atw" value="Add To Watchlist">

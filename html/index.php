@@ -1,4 +1,4 @@
-<div class="form-container">
+<div class="form-container col-3 bg-primary text-white ">
 <div class="head-text">
   <span>Login</span>
 </div>
