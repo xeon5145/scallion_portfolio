@@ -1,3 +1,11 @@
+/* Default css for all devices */
+.login_button
+{
+  background-color: white;
+  color: #3A8095;
+}
+/* Default css for all devices */
+
 /* Default css is for mobile */
 .main_header
 {
