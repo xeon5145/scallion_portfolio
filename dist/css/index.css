@@ -27,6 +27,10 @@
 /* Fonts */
 
 /* Default css for all devices */
+html, body
+{
+  height: 100%;
+}
 *
 {
   padding: 0;
@@ -136,7 +140,34 @@
   display: none;
 }
 /* for tablet */
+@media(min-width: 1000px)
+{
+  .main_header
+  {
+    text-align: left;
+  }
+
+}
 /* for tablet */
 
 /* for desktop */
+@media(min-width: 1192px)
+{
+  .main_header
+  {
+    text-align: left;
+  }
+  .footer-div
+  {
+    display: block;
+    background-image: linear-gradient(to right, #13547A,#80D0C7);
+    position: relative;
+    bottom: 0px;
+  }
+    .footer-div p
+    {
+      color: white;
+      font-family: Quicksand-Medium;
+    }
+}
 /* for desktop */
