@@ -1,6 +1,6 @@
 <div class="login_form">
 <div class="login_form-header">
-  <span>Login</span>
+  <p>Login</p>
 </div>
       <form class="" method="post">
           <input class="" type="text" id="username" name="username" placeholder="Username/Email"><br/>

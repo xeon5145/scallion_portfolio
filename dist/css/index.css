@@ -68,10 +68,12 @@ html, body
 .login_form
 {
   margin: 6rem auto;
+  display: inline-grid;
   background-image: linear-gradient(to right, #13547A,#80D0C7);
-  width: 16rem;
-  height: 25rem;
+  width: fit-content;
+  height: fit-content;
   border-radius: 0.8rem;
+  position: relative;
 }
 .login_form-header
 {
@@ -84,7 +86,7 @@ html, body
   position: relative;
   padding: 0.5rem auto;
 }
-.login_form-header span
+.login_form-header p
 {
   color: white;
   font-family: Quicksand-Bold;
@@ -146,7 +148,6 @@ html, body
   {
     text-align: left;
   }
-
 }
 /* for tablet */
 
@@ -157,6 +158,10 @@ html, body
   {
     text-align: left;
   }
+  .login_form form
+  {
+    float: right;
+  }
   .footer-div
   {
     display: block;
@@ -164,10 +169,10 @@ html, body
     position: relative;
     bottom: 0px;
   }
-    .footer-div p
-    {
-      color: white;
-      font-family: Quicksand-Medium;
-    }
+  .footer-div p
+  {
+    color: white;
+    font-family: Quicksand-Medium;
+  }
 }
 /* for desktop */
