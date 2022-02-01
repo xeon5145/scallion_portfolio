@@ -7,7 +7,7 @@
   </head>
   <body>
 <header>
-  <div class="main_header">
+  <div class="head_bar">
     <span>Onion Portfolio</span>
   </div>
 </header>

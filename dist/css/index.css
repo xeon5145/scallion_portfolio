@@ -41,138 +41,188 @@ html, body
   max-width: 90%;
   margin: 0 auto;
 }
-.login_button
-{
-  background-color: white;
-  color: #3A8095;
-}
 /* Default css for all devices */
-
 /* Default css is for mobile */
-.main_header
+@media(max-width: 600px)
 {
-  background-image: linear-gradient(to right, #13547A,#80D0C7);
-  text-align: center;
-  padding: 0.5rem;
-}
-.main_header span
-{
-  font-family: 'Quicksand-Bold';
-  color: white;
-  font-size: 1.8rem;
-}
-.main_footer
-{
-  display: none;
-}
-.login_form
-{
-  margin: 6rem auto;
-  display: inline-grid;
-  background-image: linear-gradient(to right, #13547A,#80D0C7);
-  width: fit-content;
-  height: fit-content;
-  border-radius: 0.8rem;
-  position: relative;
-}
-.login_form-header
-{
-  padding: 0.8rem 0;
-  text-align: center;
-  position: relative;
-}
-.login_form form
-{
-  position: relative;
-  padding: 0.5rem auto;
-}
-.login_form-header p
-{
-  color: white;
-  font-family: Quicksand-Bold;
-  font-size: 2rem;
-}
-.login_form input
-{
-  border: 0rem;
-  border-bottom: 0.05rem solid;
-  border-bottom-color: white;
-  color: white;
-  font-family: Quicksand-Medium;
-  font-size: 1.1rem;
-  width: 80%;
-  margin: 1.1rem 0.8rem;
-  background: transparent;
-}
-.login_form input::placeholder
-{
-  color: white;
-  font-size: 1rem;
-  font-family: Quicksand-Medium;
-}
-.login-links-box
-{
-  width: fit-content;
-  margin: 1.5rem 0;
-  position: relative;
-}
-.login-links-box a
-{
-  font-family: Quicksand-Medium;
-  color: white;
-  font-size: 0.8rem;
-  text-decoration: none;
-  margin: 1.1rem 0.8rem;
-}
-.login_form input[type="submit"]
-{
-  font-family: Quicksand-Medium;
-  font-size: 1.5rem;
-  color: #3A8095;
-  background: white;
-  border-radius: 0.3rem;
-  padding: 0.7rem 2.3rem;
-  width: auto;
-  margin: 1.8rem auto;
-  position: relative;
-  display: flex;
-}
-.footer-div
-{
-  display: none;
-}
-/* for tablet */
-@media(min-width: 1000px)
-{
-  .main_header
+  body
   {
-    text-align: left;
+    height: 100%;
+    width: 100%;
+    background-image:url(../image/mobile_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* mobile header starts */
+  .head_bar
+  {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+  .head_bar span
+  {
+    color: #fff;
+    font-family: Quicksand-Bold;
+    font-size: 2rem;
+  }
+  /* mobile header ends */
+  .login_box
+  {
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 2rem 4rem;
+    margin: 7.5rem auto;
+    border-radius: 2rem;
+  }
+  .login_box_head
+  {
+    text-align: center;
+    font-family: Quicksand-Bold;
+    color: #039395;
+    font-size: 2.5rem;
+  }
+  .login_box [id="username"]
+  {
+    border: none;
+    border-bottom: 0.08rem solid #039395;
+    margin-top: 2rem;
+    font-size: 1rem;
+    font-family: Quicksand-Medium;
+    color: #039395;
+  }
+  .login_box [id="password"]
+  {
+    border: none;
+    border-bottom: 0.08rem solid #039395;
+    margin: 2rem auto;
+    font-size: 1rem;
+    font-family: Quicksand-Medium;
+    color: #039395;
+  }
+  ::placeholder
+  {
+    color: #039395;
+    font-size: 1rem;
+    font-family: Quicksand-Medium;
+
+  }
+  .login_box a
+  {
+    text-decoration: none;
+    color: #039395;
+    font-family: Quicksand-Medium;
+  }
+  .login_box [type="submit"]
+  {
+    padding: 0.6rem 1rem;
+    color: #fff;
+    background-color: #039395;
+    border: none;
+    font-family: Quicksand-Medium;
+    font-size: 1.1rem;
+    margin: 2rem 3rem;
+  }
+}
+/* Default css is for mobile */
+
+/* for tablet */
+@media(min-width: 600px)
+{
+  body
+  {
+    height: 100%;
+    width: 100%;
+    background-image:url(../image/tablet_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 /* for tablet */
 
 /* for desktop */
-@media(min-width: 1192px)
+@media(min-width: 992px)
 {
-  .main_header
+  body
   {
+    height: 100%;
+    width: 100%;
+    background-image:url(../image/desktop_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  /* mobile header starts */
+  .head_bar
+  {
+    width: 100%;
+    height: fit-content;
+    background-color: #fff;
     text-align: left;
+    padding: 1rem 0;
   }
-  .login_form form
+  .head_bar span
   {
-    float: right;
+    color: #C6662C;
+    font-family: Quicksand-Bold;
+    font-size: 2rem;
+    margin-left: 1rem;
   }
-  .footer-div
+  /* mobile header ends */
+  .login_box
   {
-    display: block;
-    background-image: linear-gradient(to right, #13547A,#80D0C7);
-    position: relative;
-    bottom: 0px;
+    background-color: #ffffff;
+    width: fit-content;
+    padding: 2rem 4rem;
+    margin: 10rem 7rem auto auto;
+    border-radius: 2rem;
   }
-  .footer-div p
+  .login_box_head
   {
-    color: white;
+    text-align: center;
+    font-family: Quicksand-Bold;
+    color: #C6662C;
+    font-size: 2.5rem;
+  }
+  .login_box [id="username"]
+  {
+    border: none;
+    border-bottom: 0.08rem solid #C6662C;
+    margin-top: 2rem;
+    font-size: 1rem;
     font-family: Quicksand-Medium;
+    color: #039395;
+  }
+  .login_box [id="password"]
+  {
+    border: none;
+    border-bottom: 0.08rem solid #C6662C;
+    margin: 2rem auto;
+    font-size: 1rem;
+    font-family: Quicksand-Medium;
+    color: #C6662C;
+  }
+  ::placeholder
+  {
+    color: #C6662C;
+    font-size: 1rem;
+    font-family: Quicksand-Medium;
+  }
+  .login_box a
+  {
+    text-decoration: none;
+    color: #C6662C;
+    font-family: Quicksand-Medium;
+  }
+  .login_box [type="submit"]
+  {
+    padding: 0.6rem 1rem;
+    color: #fff;
+    background-color: #C6662C;
+    border: none;
+    font-family: Quicksand-Medium;
+    font-size: 1.1rem;
+    margin: 2rem 3rem;
   }
 }
 /* for desktop */
