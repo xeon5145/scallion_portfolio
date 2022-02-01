@@ -124,6 +124,10 @@ html, body
     font-size: 1.1rem;
     margin: 2rem 3rem;
   }
+  .footer-div
+  {
+    display: none;
+  }
 }
 /* Default css is for mobile */
 
@@ -174,7 +178,7 @@ html, body
     background-color: #ffffff;
     width: fit-content;
     padding: 2rem 4rem;
-    margin: 10rem 7rem auto auto;
+    margin: 7rem 10rem auto auto;
     border-radius: 2rem;
   }
   .login_box_head
@@ -224,5 +228,19 @@ html, body
     font-size: 1.1rem;
     margin: 2rem 3rem;
   }
+  /* desktop footer starts */
+  .footer-div
+  {
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+  }
+  .footer-div p
+  {
+    color: #C6662C;
+    font-family: Quicksand-Bold;
+    font-size: 1.1rem;
+  }
+  /* desktop footer starts */
 }
 /* for desktop */
