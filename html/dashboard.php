@@ -19,8 +19,9 @@ part 1 ends
       <div class="">
 
       <label for="">Choose a crypto : </label>
-      <select class="" name="crp_name">
-        <option value="" selected>Chosse a crypto</option>
+      <select class="" name="crp_name" required>
+        <option value="" selected>Choose a crypto</option>
+        <option value="BTC" >Bitcoin</option>
       </select>
     </div>
     <div class="">
@@ -35,6 +36,9 @@ part 1 ends
       <input type="submit" name="atw" value="Add To Watchlist">
     </div>
     </form>
+    <?php
+    echo @$add_crytpo_not;
+     ?>
   </div>
 </div>
 
@@ -49,13 +53,32 @@ part 1 ends
       <th>Profit / Loss</th>
     </thead>
     <tbody>
-      <tr>
-        <td>Solana</td>
+        <!-- <td>Solana</td>
         <td>7,568</td>
         <td>10,789</td>
         <td>10</td>
-        <td>3,891</td>
-      </tr>
+        <td>3,891</td> -->
+      <?php
+      if($run_fetch_c_list->num_rows > 0)
+      {
+        while($fetch_data = $run_fetch_c_list->fetch_assoc())
+        {
+          ?>
+          <tr>
+          <td><?php echo $fetch_data['code']; ?></td>
+          <td>BP</td>
+          <td><?php echo $fetch_data['b_price']; ?></td>
+          <td><?php echo $fetch_data['quantity']; ?></td>
+          <td>T/P</td>
+        </tr>
+          <?php
+        }
+      }
+      else
+      {
+
+      }
+       ?>
     </tbody>
     <tr>
       <td colspan="4">Total Profit / Loss</td>
