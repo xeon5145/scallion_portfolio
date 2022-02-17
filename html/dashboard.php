@@ -23,16 +23,16 @@ part 1 ends
         <option value="BTC" >Bitcoin</option>
       </select>
     </div>
-    <div class="">
+    <div class="form-card-input">
       <label for="">Enter Buy Price : </label>
       <input type="text" name="b_price" placeholder="Enter Price" required pattern="[0-9.]+">
     </div>
-    <div class="">
+    <div class="form-card-input">
       <label for="">Enter Quantity : </label>
       <input type="text" name="quantity" placeholder="Enter Quantity" required pattern="[0-9.]+">
     </div>
-    <div class="">
-      <input type="submit" name="atw" value="Add To Watchlist">
+    <div class="form-card-add">
+      <input class="form-card-add-button" type="submit" name="atw" value="Add To Watchlist">
     </div>
     </form>
     <?php
