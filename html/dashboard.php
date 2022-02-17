@@ -53,11 +53,6 @@ part 1 ends
       <th>Profit / Loss</th>
     </thead>
     <tbody>
-        <!-- <td>Solana</td>
-        <td>7,568</td>
-        <td>10,789</td>
-        <td>10</td>
-        <td>3,891</td> -->
       <?php
       if($run_fetch_c_list->num_rows > 0)
       {
@@ -73,10 +68,6 @@ part 1 ends
         </tr>
           <?php
         }
-      }
-      else
-      {
-
       }
        ?>
     </tbody>
