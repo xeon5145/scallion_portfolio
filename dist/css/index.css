@@ -161,7 +161,7 @@ html, body
   {
     width: 100%;
     height: fit-content;
-    background-color: #fff;
+    background-color: #F8F7F7;
     text-align: left;
     padding: 1rem 0;
   }
@@ -175,7 +175,7 @@ html, body
   /* mobile header ends */
   .login_box
   {
-    background-color: #ffffff;
+    background-color: #F8F7F7;
     width: fit-content;
     padding: 2rem 4rem;
     margin: 7rem 10rem auto auto;

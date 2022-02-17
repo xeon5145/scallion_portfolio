@@ -4,20 +4,19 @@ part - 1 is about the card
 which contains the for which takes the inputs of the crypto that is in hold position
 part 1 ends
 -->
-<div class="">
+<div class="intro-card">
   <!-- welcome card -->
   <p>Hi , Abhishek</p>
   <p>Total Profit / Loss : </p>
   <p>Owned Cryptos : </p>
 </div>
 
-<div class="">
+<div class="form-card">
   <!-- add watchlist form card -->
-  <p>register crypto</p>
+  <p>Add new crypto to watchlist</p>
   <div class="">
     <form class="" method="post">
-      <div class="">
-
+      <div class="form-card-dropdown">
       <label for="">Choose a crypto : </label>
       <select class="" name="crp_name" required>
         <option value="" selected>Choose a crypto</option>
@@ -25,7 +24,7 @@ part 1 ends
       </select>
     </div>
     <div class="">
-      <label for="">Enter Buy Price</label>
+      <label for="">Enter Buy Price : </label>
       <input type="text" name="b_price" placeholder="Enter Price" required pattern="[0-9.]+">
     </div>
     <div class="">

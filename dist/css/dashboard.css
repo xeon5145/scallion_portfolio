@@ -42,6 +42,7 @@ html, body
   margin: 0 auto;
 }
 /* Default css for all devices */
+
 /* Default css is for mobile */
 @media(max-width: 600px)
 {
@@ -56,5 +57,92 @@ html, body
 /* for desktop */
 @media(min-width: 992px)
 {
+  .head_bar
+  {
+    width: 100%;
+    height: fit-content;
+    background-color: #F8F7F7;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .head_bar span
+  {
+    color: #C6662C;
+    font-family: Quicksand-Bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+  body
+  {
+    height: 100%;
+    width: 100%;
+    background-image:url(../image/desktop_back.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .intro-card
+  {
+    background: #F8F7F7;
+    height: fit-content;
+    width: 40%;
+    padding: 1.7rem 2rem;
+    margin: 2.7rem 1.8rem;
+    border-radius: 2rem;
+  }
+  .intro-card p
+  {
+    font-family: Quicksand-Regular;
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #D0936E;
+  }
+  .form-card
+  {
+    background: #F8F7F7;
+    height: fit-content;
+    width: 40%;
+    padding: 1.7rem 2rem;
+    margin: 2.7rem 1.8rem;
+    border-radius: 2rem;
+  }
+  .form-card p
+  {
+    font-family: Quicksand-Bold;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #D0936E;
+  }
+  .form-card label
+  {
+    font-family: Quicksand-Regular;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #D0936E;
+  }
+  .form-card select
+  {
+    font-family: Quicksand-Regular;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #D0936E;
+    border: none;
+    background: none;
+  }
+  .form-card input
+  {
+    font-family: Quicksand-Regular;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #D0936E;
+    border: none;
+    border-bottom: 1px solid ;
+    background: none;
+  }
+  .form-card input::placeholder
+  {
+    color: #D0936E;
+    font-family: Quicksand-Regular;
+    font-size: 1.1rem;
+  }
 }
 /* for desktop */
