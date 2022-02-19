@@ -4,6 +4,10 @@ part - 1 is about the card
 which contains the for which takes the inputs of the crypto that is in hold position
 part 1 ends
 -->
+<div class="col">
+
+<div class="col-1">
+
 <div class="intro-card">
   <!-- welcome card -->
   <p>Hi , Abhishek</p>
@@ -40,10 +44,12 @@ part 1 ends
      ?>
   </div>
 </div>
-
-<div class="">
+</div>
+<!-- Table to be shown in diff row -->
+<div class="col-2">
+<div class="watchlist-card">
   <!-- watchlist table card -->
-  <table border="collapse">
+  <table>
     <thead>
       <th>Name</th>
       <th>Current Price</th>
@@ -75,4 +81,6 @@ part 1 ends
       <td>2,347</td>
     </tr>
   </table>
+</div>
+</div>
 </div>

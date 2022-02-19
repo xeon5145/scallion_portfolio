@@ -80,11 +80,25 @@ html, body
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .col
+  {
+    display: flex;position: relative;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    height: 100%;
+  }
+  .col-1
+  {
+    width: 100%;
+    padding-left: 2rem;
+  }
+
   .intro-card
   {
     background: #F8F7F7;
     height: fit-content;
-    width: 40%;
+    width: 90%;
     padding: 1.7rem 2rem;
     margin: 2.7rem 1.8rem;
     border-radius: 2rem;
@@ -100,7 +114,7 @@ html, body
   {
     background: #F8F7F7;
     height: fit-content;
-    width: 40%;
+    width: 90%;
     padding: 1.7rem 2rem;
     margin: 2.7rem 1.8rem;
     border-radius: 2rem;
@@ -146,11 +160,73 @@ html, body
   }
   .form-card-add-button
   {
+    display: flex;
+    flex-direction: row;
     background-color: #D0936E;
     color: #F8F7F7;
     border: none;
     padding: 1rem 1.8rem;
     font-size: 1.1rem;
+    border-radius: 0.5rem;
+    margin: 1rem auto;
   }
+  .col-2
+  {
+    width: 100%;
+    padding-left: 2rem;
+  }
+  .watchlist-card
+  {
+    background: #F8F7F7;
+    height: fit-content;
+    padding: 1.7rem 2rem;
+    margin: 2.7rem 1.8rem;
+    border-radius: 2rem;
+  }
+  .watchlist-card table
+  {
+    border: none;
+    width: 100%;
+    color: #D0936E;
+    font-family: Quicksand-Regular;
+    font-size: 1.1rem;
+  }
+  .watchlist-card td
+  {
+    border-right: 1px solid #D0936E;
+    padding: 0.8rem 1rem;
+  }
+  .watchlist-card td:last-child
+  {
+    border-right: none;
+  }
+  .watchlist-card th
+  {
+    border-right: 1px solid #D0936E;
+    border-bottom: 1px solid #D0936E;
+    padding: 0.8rem 1rem;
+  }
+  .watchlist-card th:last-child
+  {
+    border-right: none;
+  }
+  /* desktop footer starts */
+  .footer-div
+  {
+    background-color: #fff;
+    height: fit-content;
+    width: 100%;
+    margin-bottom: 0%;
+  }
+  .footer-div p
+  {
+    color: #C6662C;
+    font-family: Quicksand-Bold;
+    font-size: 1.1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  /* desktop footer starts */
 }
 /* for desktop */
