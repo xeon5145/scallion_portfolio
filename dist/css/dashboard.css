@@ -72,6 +72,18 @@ html, body
     font-size: 2rem;
     margin-left: 1rem;
   }
+  .head_bar button
+  {
+    background-color: #D0936E;
+    color: #F8F7F7;
+    border: none;
+    padding: 0.8rem 1.8rem;
+    font-family: Quicksand-Bold;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+    margin-right: 1rem;
+    float: right;
+  }
   body
   {
     height: 100%;
