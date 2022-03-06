@@ -9,5 +9,8 @@
   <header>
     <div class="head_bar">
       <span>Onion Portfolio</span>
+      <div class="">
+        <button type="button" name="logout">Logout</button>
+      </div>
     </div>
   </header>
