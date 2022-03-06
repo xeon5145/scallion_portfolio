@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$db = "onion_portfolio";
+$db = "scallian_portfolio";
 $op_conn = mysqli_connect($servername,$username,$password,$db);
 //checking connection
 if ($op_conn->connect_error)

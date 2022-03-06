@@ -41,6 +41,7 @@ if(isset($_POST['crt_accnt']))
   else
   {
     $account_message = "<p>Something went wrong , Please try again</p>";
+     // echo "Error: " . $acc_crt . "<br>" . $op_conn->error;
   }
 }
 // ------------------------create account----------------------
