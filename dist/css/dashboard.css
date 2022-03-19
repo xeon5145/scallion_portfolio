@@ -71,8 +71,9 @@ html, body
     font-family: Quicksand-Bold;
     font-size: 2rem;
     margin-left: 1rem;
+    width: fit-content;
   }
-  .head_bar button
+  .head_bar input
   {
     background-color: #D0936E;
     color: #F8F7F7;
@@ -83,6 +84,7 @@ html, body
     border-radius: 0.5rem;
     margin-right: 1rem;
     float: right;
+    margin-top: -2.5rem;
   }
   body
   {
