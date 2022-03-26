@@ -53,21 +53,6 @@ html, body
     background-repeat: no-repeat;
     background-size: cover;
   }
-  /* mobile header starts */
-  .head_bar
-  {
-    width: 100%;
-    height: fit-content;
-    text-align: center;
-    margin: 1.5rem auto;
-  }
-  .head_bar span
-  {
-    color: #fff;
-    font-family: Quicksand-Bold;
-    font-size: 2rem;
-  }
-  /* mobile header ends */
   .login_box
   {
     background-color: #ffffff;
@@ -124,10 +109,6 @@ html, body
     font-size: 1.1rem;
     margin: 2rem 3rem;
   }
-  .footer-div
-  {
-    display: none;
-  }
 }
 /* Default css is for mobile */
 
@@ -156,23 +137,6 @@ html, body
     background-repeat: no-repeat;
     background-size: cover;
   }
-  /* mobile header starts */
-  .head_bar
-  {
-    width: 100%;
-    height: fit-content;
-    background-color: #F8F7F7;
-    text-align: left;
-    padding: 1rem 0;
-  }
-  .head_bar span
-  {
-    color: #C6662C;
-    font-family: Quicksand-Bold;
-    font-size: 2rem;
-    margin-left: 1rem;
-  }
-  /* mobile header ends */
   .login_box
   {
     background-color: #F8F7F7;
@@ -228,21 +192,5 @@ html, body
     font-size: 1.1rem;
     margin: 2rem 3rem;
   }
-  /* desktop footer starts */
-  .footer-div
-  {
-    background-color: #fff;
-    height: 15%;
-    position:absolute;
-    bottom: 0;
-    width: 100%;
-  }
-  .footer-div p
-  {
-    color: #C6662C;
-    font-family: Quicksand-Bold;
-    font-size: 1.1rem;
-  }
-  /* desktop footer starts */
 }
 /* for desktop */

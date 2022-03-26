@@ -36,7 +36,7 @@ else
   $login_status = "No account is linked to this username/Email";
 }
 }
-include "include/main_header.php";
+include "include/header.php";
 include "html/index.php";
-include "include/main_footer.php";
+include "include/footer.php";
  ?>
