@@ -8,14 +8,24 @@ $fgt_pwd_message = "";
 if(isset($_POST['fgt_pwd']))
 {
   $user_mail = $_POST['fgt_email'];
-  $cred_fetch = "SELECT u_id FROM user_accounts WHERE email = '$user_mail'";
+  $cred_fetch = "SELECT u_id,email FROM user_accounts WHERE email = '$user_mail'";
   $cf_id = $op_conn->query($cred_fetch);
   if($cf_id->num_rows > 0)
   {
     while($cf_fetch = $cf_id->fetch_assoc())
     {
       $cf_email = $cf_fetch['email'];
-      $fgt_pwd_message = "<p>Recovery link has been sent to your mail</p>";
+      $mail->Subject = "Scallian Portfolio Recovery";
+      $mail->Body = "Recovery Mail";
+      $mail->addAddress($cf_email);
+      if($mail->send())
+      {
+        $fgt_pwd_message = "<p>Recovery link has been sent to your mail</p>";
+      }
+      else
+      {
+        $fgt_pwd_message = "<p>Something went wrong</p>";
+      }
     }
   }
   else

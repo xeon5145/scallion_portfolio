@@ -26,7 +26,7 @@ if(isset($_POST['crt_accnt']))
 
   if(mysqli_query($op_conn,$acc_crt))
   {
-    $mail->Subject = "Welcome To Onion";
+    $mail->Subject = "Welcome To Scallian";
     $mail->Body = "your account has been created successfully , please verify your email using this link";
     $mail->addAddress($email);
     if($mail->Send())
