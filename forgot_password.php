@@ -35,7 +35,7 @@ if(isset($_POST['fgt_pwd']))
 }
 // ------------------------------data fetch--------------------------
 
-include "include/account_header.php";
+include "include/header.php";
 include "html/forgot_password.php";
-include "include/account_footer.php";
+include "include/footer.php";
  ?>
