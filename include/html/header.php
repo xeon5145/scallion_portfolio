@@ -18,8 +18,9 @@
     </div>
   </header>
 <?php
-echo $_SESSION['username'];
+  echo $_SESSION['username'];
  ?>
+
 <script type="text/javascript">
   var username = '<?php echo $_SESSION['username']; ?>';
   if(username == "")

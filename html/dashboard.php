@@ -36,9 +36,12 @@ part 1 ends
       <input type="text" name="quantity" placeholder="Enter Quantity" required pattern="[0-9.]+">
     </div>
     <div class="form-card-add">
-      <input class="form-card-add-button" type="submit" name="atw" value="Add To Watchlist">
+      <input class="form-card-add-button" type="submit" name="atw" id="add_crypto" value="Add To Watchlist">
     </div>
     </form>
+    <div class="" id="atw_noti">
+
+    </div>
     <?php
     echo @$add_crytpo_not;
      ?>
@@ -84,3 +87,31 @@ part 1 ends
 </div>
 </div>
 </div>
+
+<script type="text/javascript">
+
+// add crypto form--------------------
+// $(document).click(function )
+// {
+//  $("add_crypto").on('submit',(function(e)
+//  {
+//    e.preventDefault();
+//    $.ajax({
+//      url: "api/add_watchlist.php",
+//      type: "POST",
+//      data: new FormDta(this),
+//      contentType: false,
+//      cache: false,
+//      processData: false,
+//      success: function(data)
+//      {
+//        $("#atw_noti").html(data);
+//      },
+//      error: function()
+//      {
+//      }
+//    });
+//  });
+// )};
+// add crypto form--------------------
+</script>
