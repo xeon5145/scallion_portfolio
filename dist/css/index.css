@@ -232,7 +232,9 @@ html, body
   .footer-div
   {
     background-color: #fff;
-    height: fit-content;
+    height: 15%;
+    position:absolute;
+    bottom: 0;
     width: 100%;
   }
   .footer-div p
