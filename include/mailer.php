@@ -30,7 +30,7 @@ $mail->Username = "deathvalerians@gmail.com";
 //set gmail password
 $mail->Password = "p5145k1188";
 //set sender mail
-$mail->setFrom("deathvalerians@gmail.com", "Onion Portfolio");
+$mail->setFrom("deathvalerians@gmail.com", "Scallian Portfolio");
 
 // $mail->SMTPDebug = SMTP::DEBUG_CLIENT;
 // subject
