@@ -15,19 +15,24 @@ $mail->isSMTP();
 //HTML true
 $mail->isHTML(true);
 //define SMTP host
+// $mail->Host = "localhost";
 $mail->Host = "smtp.gmail.com";
 //enable smtp auth
 $mail->SMTPAuth = "true";
 //set type of encryption (ssl/tls)
 $mail->SMTPSecure = "tls";
+//SMTP AutoTLS
+// $mail->SMTPAutoTLS = "false";
 //set port to connect smtp
 $mail->Port = "587";
 //set gmail username
 $mail->Username = "deathvalerians@gmail.com";
 //set gmail password
-$mail->Password = "AOBFNTNDR";
+$mail->Password = "p5145k1188";
 //set sender mail
 $mail->setFrom("deathvalerians@gmail.com", "Onion Portfolio");
+
+// $mail->SMTPDebug = SMTP::DEBUG_CLIENT;
 // subject
 // body
 // address
