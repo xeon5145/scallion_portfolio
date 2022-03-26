@@ -2,6 +2,7 @@
 include "include/back_imp.php";
 // error_reporting(0);
 session_start();
+$_SESSION['username'] = "";
 // empty message variables-------------------------------------------
 $login_status = "";
 // empty message variables-------------------------------------------
