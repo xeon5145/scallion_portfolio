@@ -16,7 +16,9 @@ if(isset($_POST['fgt_pwd']))
     {
       $cf_email = $cf_fetch['email'];
       $mail->Subject = "Scallian Portfolio Recovery";
-      $mail->Body = "Recovery Mail";
+      $mail->Body = "
+      Recovery Mail
+      ";
       $mail->addAddress($cf_email);
       if($mail->send())
       {
