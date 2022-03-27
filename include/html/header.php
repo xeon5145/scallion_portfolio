@@ -7,6 +7,8 @@
   <link rel="stylesheet" href="dist/css/index.css">
   <link rel="stylesheet" href="dist/css/dashboard.css">
   <link rel="stylesheet" href="dist/css/footer.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
 </head>
 <body>
   <header>

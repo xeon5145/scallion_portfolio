@@ -1,7 +1,6 @@
 <?php
+include "../required/include/connection.php";
 //submitting added crypto---------------------
-if(isset($_POST['atw']))
-{
   $crypto = $_POST['crp_name'];
   $buy_price = $_POST['b_price'];
   $quantity = $_POST['quantity'];
@@ -17,13 +16,12 @@ if(isset($_POST['atw']))
 
     if(mysqli_query($op_conn,$add_crypto))
     {
-      $add_crytpo_not = "Crypto added to watchlist sucessfully";
+      echo "Crypto added to watchlist sucessfully";
     }
     else
     {
-      $add_crytpo_not = "Something went wrong";
+      echo "Something went wrong";
     }
-}
 //submitting added crypto---------------------
 
  ?>

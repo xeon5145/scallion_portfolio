@@ -19,7 +19,7 @@ part 1 ends
   <!-- add watchlist form card -->
   <p>Add new crypto to watchlist</p>
   <div class="">
-    <form class="" method="post">
+    <form class="" id="add_watchlist_form" method="post">
       <div class="form-card-dropdown">
       <label for="">Choose a crypto : </label>
       <select class="" name="crp_name" required>
@@ -90,28 +90,46 @@ part 1 ends
 
 <script type="text/javascript">
 
-// add crypto form--------------------
-// $(document).click(function )
-// {
-//  $("add_crypto").on('submit',(function(e)
-//  {
-//    e.preventDefault();
-//    $.ajax({
-//      url: "api/add_watchlist.php",
-//      type: "POST",
-//      data: new FormDta(this),
-//      contentType: false,
-//      cache: false,
-//      processData: false,
-//      success: function(data)
-//      {
-//        $("#atw_noti").html(data);
-//      },
-//      error: function()
-//      {
-//      }
-//    });
-//  });
-// )};
-// add crypto form--------------------
+$(document).ready(function(e){
+  $("#add_watchlist_form").on('submit',(function(e){
+    e.preventDefault();
+    $.ajax({
+      url: "api/add_watchlist.php",
+      type: "POST",
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(data)
+      {
+        $("#atw_noti").html(data);
+        $("#add_watchlist_form")[0].reset();
+      },
+      error: function()
+      {
+      }
+    });
+  }));
+});
+
+// $(document).ready(function (e) {
+//     $("#otp_form").on('submit',(function(e) {
+//         e.preventDefault();
+//         $.ajax({
+//             url: "api.php",
+//             type: "POST",
+//             data:  new FormData(this),
+//             contentType: false,
+//             cache: false,
+//             processData:false,
+//             success: function(data)
+//             {
+//                 $("#message").html(data);
+//             },
+//               error: function()
+//             {
+//             }
+//        });
+//     }));
+// });
 </script>
