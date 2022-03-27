@@ -16,11 +16,11 @@ include "../required/include/connection.php";
 
     if(mysqli_query($op_conn,$add_crypto))
     {
-      echo "Crypto added to watchlist sucessfully";
+      echo "<p>Crypto added to watchlist sucessfully</p>";
     }
     else
     {
-      echo "Something went wrong";
+      echo "<p>Something went wrong</p>";
     }
 //submitting added crypto---------------------
 

@@ -35,13 +35,13 @@ part 1 ends
       <label for="">Enter Quantity : </label>
       <input type="text" name="quantity" placeholder="Enter Quantity" required pattern="[0-9.]+">
     </div>
+    <div class="" id="atw_noti">
+      <p></p>
+    </div>
     <div class="form-card-add">
       <input class="form-card-add-button" type="submit" name="atw" id="add_crypto" value="Add To Watchlist">
     </div>
     </form>
-    <div class="" id="atw_noti">
-
-    </div>
     <?php
     echo @$add_crytpo_not;
      ?>
@@ -50,7 +50,7 @@ part 1 ends
 </div>
 <!-- Table to be shown in diff row -->
 <div class="col-2">
-<div class="watchlist-card">
+<div class="watchlist-card" id="watchlist_card">
   <!-- watchlist table card -->
   <table>
     <thead>
@@ -104,6 +104,7 @@ $(document).ready(function(e){
       {
         $("#atw_noti").html(data);
         $("#add_watchlist_form")[0].reset();
+        $( "#watchlist_card" ).load( "dashboard.php #watchlist_card" );
       },
       error: function()
       {
