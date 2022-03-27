@@ -111,25 +111,4 @@ $(document).ready(function(e){
     });
   }));
 });
-
-// $(document).ready(function (e) {
-//     $("#otp_form").on('submit',(function(e) {
-//         e.preventDefault();
-//         $.ajax({
-//             url: "api.php",
-//             type: "POST",
-//             data:  new FormData(this),
-//             contentType: false,
-//             cache: false,
-//             processData:false,
-//             success: function(data)
-//             {
-//                 $("#message").html(data);
-//             },
-//               error: function()
-//             {
-//             }
-//        });
-//     }));
-// });
 </script>
