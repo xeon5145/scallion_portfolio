@@ -10,7 +10,7 @@ part 1 ends
 
 <div class="intro-card">
   <!-- welcome card -->
-  <p>Hi , <?php echo $_SESSION['username']; ?></p>
+  <p>Hi , <?php echo $_COOKIE['username']; ?></p>
   <p>Total Profit / Loss : </p>
   <p>Owned Cryptos : </p>
 </div>

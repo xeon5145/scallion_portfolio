@@ -1,7 +1,6 @@
 <?php
 include "include/back_imp.php";
 error_reporting(0);
-session_start();
 
 // empty message variables-------------------------------------------
 $login_status = "";
@@ -23,8 +22,8 @@ if($cred_id->num_rows > 0)
    $pwd = $cred_ow['password'];
    if($enc_pwd == $pwd)
    {
-     header('Location: dashboard.php');
-     $_SESSION['username'] = $cred_ow['firstname'];
+     setcookie('username',$cred_ow['firstname'],time() + (86400 * 5), '/'); // cookie valid till 5 days
+     header('location: dashboard.php');
    }
    else
    {

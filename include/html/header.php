@@ -14,23 +14,6 @@
   <header>
     <div class="head_bar">
       <span>Scallian Portfolio</span>
-      <form id="logout_form" method="post">
-      <input type="submit" name="logout" value="Logout">
-      </form>
+      <?php echo $logout_btn; ?>
     </div>
   </header>
-<?php
-  echo $_SESSION['username'];
- ?>
-
-<script type="text/javascript">
-  var username = '<?php echo $_SESSION['username']; ?>';
-  if(username == "")
-  {
-    document.getElementById("logout_form").style.display = "none";
-  }
-  else
-  {
-    document.getElementById("logout_form").style.display = "";
-  }
-</script>
