@@ -10,7 +10,7 @@ part 1 ends
 
 <div class="intro-card">
   <!-- welcome card -->
-  <p>Hi , <?php echo $_SESSION['username']; ?></p>
+  <p>Hi , <?php echo $_COOKIE['username']; ?></p>
   <p>Total Profit / Loss : </p>
   <p>Owned Cryptos : </p>
 </div>
@@ -19,7 +19,7 @@ part 1 ends
   <!-- add watchlist form card -->
   <p>Add new crypto to watchlist</p>
   <div class="">
-    <form class="" method="post">
+    <form class="" id="add_watchlist_form" method="post">
       <div class="form-card-dropdown">
       <label for="">Choose a crypto : </label>
       <select class="" name="crp_name" required>
@@ -35,8 +35,11 @@ part 1 ends
       <label for="">Enter Quantity : </label>
       <input type="text" name="quantity" placeholder="Enter Quantity" required pattern="[0-9.]+">
     </div>
+    <div class="" id="atw_noti">
+      <p></p>
+    </div>
     <div class="form-card-add">
-      <input class="form-card-add-button" type="submit" name="atw" value="Add To Watchlist">
+      <input class="form-card-add-button" type="submit" name="atw" id="add_crypto" value="Add To Watchlist">
     </div>
     </form>
     <?php
@@ -47,7 +50,7 @@ part 1 ends
 </div>
 <!-- Table to be shown in diff row -->
 <div class="col-2">
-<div class="watchlist-card">
+<div class="watchlist-card" id="watchlist_card">
   <!-- watchlist table card -->
   <table>
     <thead>
@@ -84,3 +87,29 @@ part 1 ends
 </div>
 </div>
 </div>
+
+<script type="text/javascript">
+
+$(document).ready(function(e){
+  $("#add_watchlist_form").on('submit',(function(e){
+    e.preventDefault();
+    $.ajax({
+      url: "api/add_watchlist.php",
+      type: "POST",
+      data: new FormData(this),
+      contentType: false,
+      cache: false,
+      processData: false,
+      success: function(data)
+      {
+        $("#atw_noti").html(data);
+        $("#add_watchlist_form")[0].reset();
+        $( "#watchlist_card" ).load( "dashboard.php #watchlist_card" );
+      },
+      error: function()
+      {
+      }
+    });
+  }));
+});
+</script>

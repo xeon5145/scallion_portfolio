@@ -1,0 +1,90 @@
+/* Fonts */
+@font-face
+{
+  font-family: Quicksand-Bold;
+  src: url(../fonts/Quicksand/Quicksand-Bold.ttf);
+}
+@font-face
+{
+  font-family: Quicksand-Light;
+  src: url(../fonts/Quicksand/Quicksand-Light.ttf);
+}
+@font-face
+{
+  font-family: Quicksand-Medium;
+  src: url(../fonts/Quicksand/Quicksand-Medium.ttf);
+}
+@font-face
+{
+  font-family: Quicksand-Regular;
+  src: url(../fonts/Quicksand/Quicksand-Regular.ttf);
+}
+@font-face
+{
+  font-family: Quicksand-SemiBold;
+  src: url(../fonts/Quicksand/Quicksand-Thin.ttf);
+}
+/* Fonts */
+
+/* Default css for all devices */
+html, body
+{
+  height: 100%;
+}
+*
+{
+  padding: 0;
+  margin: 0;
+}
+.container
+{
+  max-width: 90%;
+  margin: 0 auto;
+}
+/* Default css for all devices */
+
+/* Default css is for mobile */
+@media(max-width: 600px)
+{
+  .head_bar
+  {
+    width: 100%;
+    height: fit-content;
+    text-align: center;
+    margin: 1.5rem auto;
+  }
+  .head_bar span
+  {
+    color: #fff;
+    font-family: Quicksand-Bold;
+    font-size: 2rem;
+  }
+}
+/* Default css is for mobile */
+
+/* for tablet */
+@media(min-width: 600px)
+{
+}
+/* for tablet */
+
+/* for desktop */
+@media(min-width: 992px)
+{
+  .head_bar
+  {
+    width: 100%;
+    height: fit-content;
+    background-color: #F8F7F7;
+    text-align: left;
+    padding: 1rem 0;
+  }
+  .head_bar span
+  {
+    color: #C6662C;
+    font-family: Quicksand-Bold;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+}
+/* for desktop */

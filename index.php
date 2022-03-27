@@ -1,7 +1,7 @@
 <?php
 include "include/back_imp.php";
-// error_reporting(0);
-session_start();
+error_reporting(0);
+
 // empty message variables-------------------------------------------
 $login_status = "";
 // empty message variables-------------------------------------------
@@ -22,8 +22,8 @@ if($cred_id->num_rows > 0)
    $pwd = $cred_ow['password'];
    if($enc_pwd == $pwd)
    {
-     header('Location: dashboard.php');
-     $_SESSION['username'] = $cred_ow['firstname'];
+     setcookie('username',$cred_ow['firstname'],time() + (86400 * 5), '/'); // cookie valid till 5 days
+     header('location: dashboard.php');
    }
    else
    {
@@ -36,7 +36,7 @@ else
   $login_status = "No account is linked to this username/Email";
 }
 }
-include "include/main_header.php";
+include "include/header.php";
 include "html/index.php";
-include "include/main_footer.php";
+include "include/footer.php";
  ?>
