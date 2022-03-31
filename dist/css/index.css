@@ -65,7 +65,7 @@ html, body
   {
     text-align: center;
     font-family: Quicksand-Bold;
-    color: #039395;
+    color: 039395;
     font-size: 2.5rem;
   }
   .login_box [id="username"]
@@ -139,7 +139,8 @@ html, body
   }
   .login_box
   {
-    background-color: #F8F7F7;
+    background: rgb(255,255,255,0.5);
+    backdrop-filter: blur(2px);
     width: fit-content;
     padding: 2rem 4rem;
     margin: 7rem 10rem auto auto;
@@ -156,15 +157,17 @@ html, body
   {
     border: none;
     border-bottom: 0.08rem solid #C6662C;
+    background: rgba(255,255,255,0);
     margin-top: 2rem;
     font-size: 1rem;
     font-family: Quicksand-Medium;
-    color: #039395;
+    color: #C6662C;
   }
   .login_box [id="password"]
   {
     border: none;
     border-bottom: 0.08rem solid #C6662C;
+    background: rgba(255,255,255,0);
     margin: 2rem auto;
     font-size: 1rem;
     font-family: Quicksand-Medium;
