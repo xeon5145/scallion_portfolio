@@ -1,9 +1,3 @@
-<!--
-part 1 starts
-part - 1 is about the card
-which contains the for which takes the inputs of the crypto that is in hold position
-part 1 ends
--->
 <div class="col">
 
 <div class="col-1">

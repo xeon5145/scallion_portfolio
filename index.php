@@ -1,7 +1,15 @@
 <?php
 include "include/back_imp.php";
 error_reporting(0);
-
+// auto login if username cookie is found-------------
+$c_username = $_COOKIE['username'];
+$user_match = "SELECT firstname FROM user_accounts WHERE firstname = '$c_username'";
+$exe_um = $op_conn->query($user_match);
+if($exe_um->num_rows > 0)
+{
+    header("location: dashboard.php");
+}
+// auto login if username cookie is found-------------
 // empty message variables-------------------------------------------
 $login_status = "";
 // empty message variables-------------------------------------------
