@@ -94,7 +94,7 @@ html, body
     font-family: Quicksand-Regular;
     font-size: 1.6rem;
     font-weight: bold;
-    color: #D0936E;
+    color: #C6662C;
   }
   .form-card
   {
@@ -111,21 +111,21 @@ html, body
     font-family: Quicksand-Bold;
     font-size: 1.8rem;
     font-weight: bold;
-    color: #D0936E;
+    color: #C6662C;
   }
   .form-card label
   {
     font-family: Quicksand-Regular;
     font-size: 1.3rem;
     font-weight: bold;
-    color: #D0936E;
+    color: #C6662C;
   }
   .form-card select
   {
     font-family: Quicksand-Regular;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #D0936E;
+    color: #C6662C;
     border: none;
     background: none;
   }
@@ -134,14 +134,14 @@ html, body
     font-family: Quicksand-Regular;
     font-size: 1.1rem;
     font-weight: bold;
-    color: #D0936E;
+    color: #C6662C;;
     border: none;
     border-bottom: 1px solid ;
     background: none;
   }
   .form-card-input input::placeholder
   {
-    color: #D0936E;
+    color: #C6662C;
     font-family: Quicksand-Regular;
     font-size: 1.1rem;
   }
@@ -149,7 +149,7 @@ html, body
   {
     display: flex;
     flex-direction: row;
-    background-color: #D0936E;
+    background-color: #C6662C;
     color: #F8F7F7;
     border: none;
     padding: 1rem 1.8rem;
@@ -175,13 +175,13 @@ html, body
   {
     border: none;
     width: 100%;
-    color: #D0936E;
+    color: #C6662C;
     font-family: Quicksand-Regular;
     font-size: 1.1rem;
   }
   .watchlist-card td
   {
-    border-right: 1px solid #D0936E;
+    border-right: 1px solid #C6662C;
     padding: 0.8rem 1rem;
   }
   .watchlist-card td:last-child
@@ -190,8 +190,8 @@ html, body
   }
   .watchlist-card th
   {
-    border-right: 1px solid #D0936E;
-    border-bottom: 1px solid #D0936E;
+    border-right: 1px solid #C6662C;
+    border-bottom: 1px solid #C6662C;
     padding: 0.8rem 1rem;
   }
   .watchlist-card th:last-child
