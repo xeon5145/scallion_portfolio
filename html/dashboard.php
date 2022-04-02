@@ -46,7 +46,7 @@
 <div class="col-2">
 <div class="watchlist-card" id="watchlist_card">
   <!-- watchlist table card -->
-  <table>
+  <table id="watchlist_table">
     <thead>
       <th>Name</th>
       <th>Current Price</th>
@@ -63,10 +63,17 @@
           ?>
           <tr>
           <td><?php echo $fetch_data['code']; ?></td>
-          <td>BP</td>
+          <td>LP</td>
           <td><?php echo $fetch_data['b_price']; ?></td>
           <td><?php echo $fetch_data['quantity']; ?></td>
-          <td>T/P</td>
+          <td id="profit_loss"></td>
+            <script type="text/javascript">
+            const live_price = 100000;
+            const buy_price = "<?php echo $fetch_data['b_price']; ?>";
+            const quantity = "<?php echo $fetch_data['quantity']; ?>";
+            const pr_ls = (quantity*live_price) - (quantity*buy_price);
+            document.getElementById("profit_loss").innerHTML = pr_ls.toFixed(2);
+            </script>
         </tr>
           <?php
         }
@@ -75,7 +82,7 @@
     </tbody>
     <tr>
       <td colspan="4">Total Profit / Loss</td>
-      <td>2,347</td>
+      <td id="total"></td>
     </tr>
   </table>
 </div>
@@ -106,4 +113,16 @@ $(document).ready(function(e){
     });
   }));
 });
+
+// total profit or loss calculation-------------
+var table = document.getElementById("watchlist_table"), total_pl = 0, cl = 4;
+
+for(var i = 0; table.rows.length; i++)
+{
+  total_pl = total_pl + parseInt(table.rows[i].cells[cl].innerHTML);
+}
+document.getElementById("total").innerHTML = total_pl;
+// console.log(table.rows[1].cells[4].innerHTML);
+
+// total profit or loss calculation-------------
 </script>
