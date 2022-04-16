@@ -66,8 +66,8 @@ html, body
   {
     background-color: rgb(255,255,255,0.8);
     backdrop-filter: blur(5px);
-    height: 15%;
-    position:absolute;
+    height: 10%;
+    position:fixed;
     bottom: 0;
     width: 100%;
   }
@@ -76,6 +76,7 @@ html, body
     color: #C6662C;
     font-family: Quicksand-Bold;
     font-size: 1.1rem;
+    text-align:center;
   }
 }
 /* for desktop */
