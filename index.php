@@ -11,7 +11,7 @@ if($exe_um->num_rows > 0)
 }
 // auto login if username cookie is found-------------
 // empty message variables-------------------------------------------
-$login_status = "";
+$login_status = " ";
 // empty message variables-------------------------------------------
 if(isset($_POST['login']))
 {

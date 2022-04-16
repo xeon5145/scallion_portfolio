@@ -9,9 +9,11 @@
           <a href="create_account.php">Create Account</a><br/>
           <a href="forgot_password.php">Forgot Password</a><br/>
         </div>
+        <div class="login_status">
           <?php
             echo $login_status;
           ?>
+        </div>
         <input type="submit" name="login" value="Login">
       </form>
     </div>
