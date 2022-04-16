@@ -11,7 +11,6 @@ if($exe_um->num_rows > 0)
 }
 // auto login if username cookie is found-------------
 // empty message variables-------------------------------------------
-$login_status = " ";
 // empty message variables-------------------------------------------
 if(isset($_POST['login']))
 {
@@ -35,13 +34,13 @@ if($cred_id->num_rows > 0)
    }
    else
    {
-     $login_status = "Wrong password";
+     $login_status = "<div class='login_status'>Wrong password</div>";
    }
  }
 }
 else
 {
-  $login_status = "No account is linked to this username/Email";
+  $login_status = "<div class='login_status'>No account is linked to this username/Email</div>";
 }
 }
 include "include/header.php";
