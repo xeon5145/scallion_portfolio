@@ -1,3 +1,10 @@
+<div class="box">
+  <div class="info_box">
+              <p>How to use Scallion Portfolio?</p></br>
+              <h4><u>Step1:</u> Login/Create your account.</h4></br>
+              <h4><u>Step2:</u> Add any crypto to your list by filling the form.</h4></br>
+              <h4><u>Step3:</u> Enjoy your live prices and your current profit and loss in realtime.</h4>
+    </div>
 <div class="login_box">
 <div class="login_box_head">
   <p>Login</p>
@@ -15,3 +22,4 @@
         <input type="submit" name="login" value="Login">
       </form>
     </div>
+</div>
