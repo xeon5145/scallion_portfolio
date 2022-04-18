@@ -137,14 +137,25 @@ html, body
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .box
+  {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+
+  }
   .login_box
   {
     background-color: rgb(255,255,255,0.8);
     backdrop-filter: blur(5px);
     width: 12rem;
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
     margin: 7rem 10rem auto auto;
     border-radius: 2rem;
+
   }
   .login_box_head
   {
@@ -220,5 +231,24 @@ html, body
     display:
   }
   /* Forget password */
+  /*Information box*/
+  .info_box
+  {
+    background-color: rgb(255,255,255,0.8);
+    backdrop-filter: blur(5px);
+    padding: 4rem 4rem;
+    border-radius: 2rem;
+    color:#C6662C;
+    margin: 7rem 10rem auto auto;
+    font-size: 18px;
+  }
+  .info_box p{
+    font-family: Quicksand-medium;
+    font-weight: bold;
+    font-size: 2.5rem;
+    color: #C6662C;
+
+        }
+ /*Information box*/
 }
 /* for desktop */
