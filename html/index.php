@@ -3,7 +3,7 @@
   <p>Login</p>
 </div>
       <form class="" method="post">
-          <input class="" type="text" id="username" name="username" placeholder="Username/Email"><br/>
+          <input class="" type="text" id="username" name="username" placeholder="Username/Email" required><br/>
           <input class="" type="password" id="password" name="password" placeholder="Password"><br/>
           <div class="">
           <a href="create_account.php">Create Account</a><br/>
