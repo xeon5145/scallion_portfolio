@@ -6,3 +6,6 @@ Webhost
 Link : https://in.000webhost.com/cpanel-login
 Email : abhisheksingh5145@outlook.com
 password : P5145k1188
+
+Site name : Scallian Portfolio
+Password : p5145k1188

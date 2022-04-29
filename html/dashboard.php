@@ -16,10 +16,13 @@
     <form class="" id="add_watchlist_form" method="post">
       <div class="form-card-dropdown">
       <label for="">Choose a crypto : </label>
-      <select class="" name="crp_name" required>
+      <select class="crp_name" name="crp_name" id="crp_name">
         <option value="" selected>Choose a crypto</option>
-        <option value="BTC" >Bitcoin</option>
+        <!-- <option value="BTC" >Bitcoin</option> -->
       </select>
+      <!-- <div id="crp_name">
+
+      </div> -->
     </div>
     <div class="form-card-input">
       <label for="">Enter Buy Price : </label>
@@ -90,7 +93,21 @@
 </div>
 
 <script type="text/javascript">
-
+async function getData()
+{
+  const resp = await fetch('https://api.coincap.io/v2/assets/');
+  const result = await resp.json();
+  // result
+  console.log(result);
+  for (var i = 0; i < result.data.length; i++)
+   {
+     var select_div = document.getElementById("crp_name");
+     var job_options = new Option(result.data[i].name,result.data[i].name);
+     select_div.appendChild(job_options);
+  }
+  // return result.data.map(value => value.id);
+}
+getData();
 $(document).ready(function(e){
   $("#add_watchlist_form").on('submit',(function(e){
     e.preventDefault();
@@ -125,4 +142,19 @@ document.getElementById("total").innerHTML = total_pl;
 // console.log(table.rows[1].cells[4].innerHTML);
 
 // total profit or loss calculation-------------
+// async function getData()
+// {
+//   const resp = await fetch('https://api.coincap.io/v2/assets/');
+//   const result = await resp.json();
+//   // result
+//   console.log(result);
+//   for (var i = 0; i < result.data.length; i++)
+//    {
+//      document.getElementById(".crp_name").innerHTML += `
+//      <div >${result.data[i].name}</div>
+//      `;
+//   }
+  // return result.data.map(value => value.id);
+// }
+// getData();
 </script>

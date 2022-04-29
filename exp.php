@@ -36,14 +36,38 @@ Expires on 1/30/2033</h3>
 <!-- Js code -->
 <script type="text/javascript">
 
-const pricesWs = new WebSocket('wss://ws.coincap.io/prices?assets=bitcoin')
+// const pricesWs = new WebSocket('wss://ws.coincap.io/prices?assets=bitcoin,ethereum')
 
-pricesWs.onmessage = function (msg) {
-console.log(msg.data)
-const price = JSON.parse(msg.data);
-document.getElementById("name").innerHTML = "Bitcoin";
-document.getElementById("price").innerHTML = price.bitcoin;
+async function getData()
+{
+  const resp = await fetch('https://api.coincap.io/v2/assets/');
+  const result = await resp.json();
+  // result
+  // console.log(result);
+  for (var i = 0; i < result.data.length; i++)
+   {
+     document.querySelector(".crp_name").innerHTML += `
+     <option value=`${result.data[i].name}` >${result.data[i].name}</option>
+     `;
+  }
+  return result.data.map(value => value.id);
 }
+// pricesWs.onmessage = function (msg)
+// {
+  // console.log(msg);
+// const price = JSON.parse(msg.data);
+// console.log(price);
+// const crName = Object.keys(price)[0];
+// console.log(price,crName,price[crName]);
 
+// }
+
+// getData();
+getData();
+// console.log(names);
+// console.log(count);
+// for (var i = 0; i < array.length; i++) {
+//   array[i]
+// }
 </script>
 <!-- Js code -->
